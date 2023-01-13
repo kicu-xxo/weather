@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>날씨</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <section>
+      <header>
+        <h1>Weathter</h1>
+        <select id="city-select">
+          <option value="seoul">서울</option>
+          <option value="busan">부산</option>
+          <option value="daegu">대구</option>
+          <option value="incheon">인천</option>
+          <option value="daejeon">대전</option>
+          <option value="ulsan">울산</option>
+          <option value="jeju">제주</option>
+        </select>
+      </header>
+      <div class="information-section">
+        <div class="box1">
+          <p class="city-name">서울</p>
+          <div class="weather-ico-box">
+            <img src="https://via.placeholder.com/60.jpg" alt="날씨 아이콘" />
+          </div>
+        </div>
+        <div class="box2">
+          <p class="temp-box"><span>23</span>&deg;C</p>
+          <div>
+            <p class="wind-box">바람<br /><span>3</span>m/s</p>
+            <p class="feel-temp-box">체감 온도<br /><span>20</span>&deg;C</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
